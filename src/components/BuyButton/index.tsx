@@ -1,0 +1,16 @@
+import React from 'react';
+import { View, Text, TouchableOpacity } from 'react-native';
+
+import { AntDesign } from '@expo/vector-icons'
+import { styles } from './styles';
+
+export function BuyButton() {
+  return (
+    <View style={styles.container}>
+      <TouchableOpacity style={styles.button}>
+        <AntDesign name='shoppingcart' style={styles.icon} />
+        <Text style={styles.buttonText}>Buy This</Text>
+      </TouchableOpacity>
+    </View>
+  );
+}
